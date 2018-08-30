@@ -43,6 +43,9 @@ int scaleNb(const Mat &im, const bool multiscale){
       nScales++;
     }
   }
+  cout << "nScales:";
+  cout << nScales;
+
   return nScales;
 }
 
