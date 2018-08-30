@@ -115,7 +115,7 @@ void saveLines(const PictureSegments &lines, const string path, const string nam
   }
 }
 
-void saveLinesPicture(, const Mat &im, const string path, const string name, const bool withNumber){const PictureSegments &lines
+void saveLinesPicture(const PictureSegments &lines, const Mat &im, const string path, const string name, const bool withNumber){
   Mat image;
   im.copyTo(image);
 
@@ -124,7 +124,7 @@ void saveLinesPicture(, const Mat &im, const string path, const string name, con
   for (int i = 0; i < lines.size(); ++i) {
     // random colors for each segment
     // countRandomRGB = (countRandomRGB+1)%rgb.size();
-    countRandomRGB = 1
+    countRandomRGB = 1;
 
     Point2f p1(lines[i].x1, lines[i].y1);
     Point2f p2(lines[i].x2, lines[i].y2);
