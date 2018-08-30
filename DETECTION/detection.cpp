@@ -179,6 +179,9 @@ vector<Mat> computeImagePyramid(const Mat &imGray, const bool multiscale){
   // compute nb of scale wrt picture size and multiscale option
   int nScales = scaleNb(imGray, multiscale);
 
+  cout << "nScales:";
+  cout << nScales;
+
   vector<Mat> imagePyramid(nScales);
   
   // generate gaussian pyramid with gray pictures
