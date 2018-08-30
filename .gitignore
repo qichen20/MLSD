@@ -1,0 +1,11 @@
+# OS generated files #
+######################
+**/.DS_Store
+**/__pycache__
+**/*.so
+**/*.pyc
+**/*.bak
+# temporary files #
+###################
+input_real
+real_data
