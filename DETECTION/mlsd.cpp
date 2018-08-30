@@ -38,7 +38,7 @@ int scaleNb(const Mat &im, const bool multiscale){
   int nScales = 1;
   if (multiscale){
     int maxWH = max(im.rows, im.cols);
-    while (maxWH > 1000){
+    while (maxWH > 100){
       maxWH /= 2;
       nScales++;
     }

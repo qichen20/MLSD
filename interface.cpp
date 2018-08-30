@@ -124,7 +124,6 @@ void saveLinesPicture(const PictureSegments &lines, const Mat &im, const string 
   for (int i = 0; i < lines.size(); ++i) {
     // random colors for each segment
     // countRandomRGB = (countRandomRGB+1)%rgb.size();
-    countRandomRGB = 1;
 
     Point2f p1(lines[i].x1, lines[i].y1);
     Point2f p2(lines[i].x2, lines[i].y2);
