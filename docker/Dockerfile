@@ -10,7 +10,7 @@ RUN	rm -rf build_opencv.sh && rm -rf 2.4.11.zip
 
 # install MLSD
 RUN git config --global http.sslVerify false
-RUN git clone https://github.com/ySalaun/MLSD.git
+RUN git clone https://github.com/qichen20/MLSD.git
 RUN cd MLSD && cmake . && make -j4 && mv LSD_MULTISCALE /usr/local/bin && rm -rf ../MLSD
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
